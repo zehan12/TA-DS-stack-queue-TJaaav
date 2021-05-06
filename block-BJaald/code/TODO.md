@@ -73,9 +73,9 @@ queue2.enqueue(1);
 queue2.enqueue(4); // alert Queue is overflowing
 
 console.log(queue2.dequeue()); // => 10
-console.log(queue2.length); // => 4
-console.log(queue2.dequeue()); // => 12
 console.log(queue2.length); // => 3
+console.log(queue2.dequeue()); // => 12
+console.log(queue2.length); // => 2
 
 console.log(queue2.peek()); // 120
 
@@ -157,9 +157,9 @@ queue2.enqueue(1);
 queue2.enqueue(4); // alert Queue is overflowing
 
 console.log(queue2.dequeue()); // => 10
-console.log(queue2.length); // => 4
-console.log(queue2.dequeue()); // => 12
 console.log(queue2.length); // => 3
+console.log(queue2.dequeue()); // => 12
+console.log(queue2.length); // => 2
 
 console.log(queue2.peek()); // 120
 
