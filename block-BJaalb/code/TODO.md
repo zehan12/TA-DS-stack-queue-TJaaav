@@ -45,9 +45,9 @@ stack.add(1);
 stack.add(4);
 
 console.log(stack.remove()); // => 4
-console.log(stack.length); // => 5
-console.log(stack.remove()); // => 1
 console.log(stack.length); // => 4
+console.log(stack.remove()); // => 1
+console.log(stack.length); // => 3
 
 console.log(stack.peek()); // 120
 
@@ -55,7 +55,7 @@ console.log(stack.isEmpty()); // false
 
 console.log(stack.remove()); // => 120
 
-console.log(stack.add(100));
+console.log(stack.add(100)); // 3
 
 console.log(stack.peek()); // => 100
 
@@ -76,9 +76,9 @@ stack2.add(1);
 stack2.add(4); // alert Stack is overflowing
 
 console.log(stack2.remove()); // => 1
-console.log(stack2.length); // => 4
-console.log(stack2.remove()); // => 120
 console.log(stack2.length); // => 3
+console.log(stack2.remove()); // => 120
+console.log(stack2.length); // => 2
 
 console.log(stack2.peek()); // 12
 
@@ -86,7 +86,7 @@ console.log(stack2.isEmpty()); // false
 
 console.log(stack2.remove()); // => 12
 
-console.log(stack2.add(100));
+console.log(stack2.add(100)); // 2
 
 console.log(stack2.peek()); // => 100
 
@@ -125,6 +125,7 @@ class Stack {
 }
 
 // Test 1
+
 const stack = new Stack();
 
 stack.add(10);
@@ -134,9 +135,9 @@ stack.add(1);
 stack.add(4);
 
 console.log(stack.remove()); // => 4
-console.log(stack.length); // => 5
-console.log(stack.remove()); // => 1
 console.log(stack.length); // => 4
+console.log(stack.remove()); // => 1
+console.log(stack.length); // => 3
 
 console.log(stack.peek()); // 120
 
@@ -144,7 +145,7 @@ console.log(stack.isEmpty()); // false
 
 console.log(stack.remove()); // => 120
 
-console.log(stack.add(100));
+console.log(stack.add(100)); // 3
 
 console.log(stack.peek()); // => 100
 
@@ -155,6 +156,7 @@ console.log(stack.remove()); // => 10
 console.log(stack.isEmpty()); // true
 
 // Test 2
+
 const stack2 = new Stack(4);
 
 stack2.add(10);
@@ -164,9 +166,9 @@ stack2.add(1);
 stack2.add(4); // alert Stack is overflowing
 
 console.log(stack2.remove()); // => 1
-console.log(stack2.length); // => 4
-console.log(stack2.remove()); // => 120
 console.log(stack2.length); // => 3
+console.log(stack2.remove()); // => 120
+console.log(stack2.length); // => 2
 
 console.log(stack2.peek()); // 12
 
@@ -174,7 +176,7 @@ console.log(stack2.isEmpty()); // false
 
 console.log(stack2.remove()); // => 12
 
-console.log(stack2.add(100));
+console.log(stack2.add(100)); // 2
 
 console.log(stack2.peek()); // => 100
 
